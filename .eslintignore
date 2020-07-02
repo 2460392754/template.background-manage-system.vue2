@@ -1,4 +1,7 @@
-build/*.js
-src/assets
-public
-dist
+# 忽略文件夹
+node_modules/
+dist/
+dll/
+
+# 忽略文件
+*.min.js

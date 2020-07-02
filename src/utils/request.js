@@ -25,7 +25,7 @@ service.interceptors.request.use(
         }
 
         if (store.getters.token) {
-            config.headers['X-Token'] = getToken();
+            config.headers.Authorization = 'Bearer ' + getToken();
         }
         return config;
     },
